@@ -10,6 +10,7 @@ const categoryIcons = {
   Category.work: Icons.work
 };
 final formatter = DateFormat.yMd();
+
 enum Category { food, travel, leisure, work }
 
 class Expense {
@@ -25,7 +26,7 @@ class Expense {
   final double amount;
   final DateTime date;
   final Category category;
-   String get formattedDate{
+  String get formattedDate {
     return formatter.format(date);
   }
 }
